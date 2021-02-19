@@ -19,5 +19,5 @@ from crudapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.insert_view),
-    path('/display',views.display),
+    path('display/',views.display),
 ]
