@@ -10,4 +10,4 @@ def insert_view(request):
 
 def display(request):
 	st=Student.objects.all() # Collect all records from table
-	return render(request,'display.html',{'st':st})    
+	return render(request,'star/display.html',{'st':st})    
