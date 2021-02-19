@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .forms import StudentForm
 from .models import Student
 
@@ -10,4 +10,4 @@ def insert_view(request):
 
 def display(request):
 	st=Student.objects.all() # Collect all records from table
-	return render(request,'star/display.html',{'st':st})    
+	return render(request,'star/display.html',{'st':st})

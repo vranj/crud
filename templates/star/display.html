@@ -1,17 +1,12 @@
-<<!DOCTYPE html>
-{% extends "index.html" %}
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="main">
-    {% for sts in st %}
+
+
+{% block content %}
+
+
+  {% for sts in st %}
 
 {{sts.No}}, {{sts.Name}},{{sts.Marks}},{{sts.Address}}<br>
 
 {% endfor %}
-</div>
-  </body>
-</html>
+
+{% endblock %}
